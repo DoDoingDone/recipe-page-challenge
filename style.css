@@ -1,0 +1,202 @@
+/*
+# Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Nutmeg: hsl(14, 45%, 36%)
+- Dark Raspberry: hsl(332, 51%, 32%)
+
+### Neutral
+
+- White: hsl(0, 0%, 100%)
+- Rose White: hsl(330, 100%, 98%)
+- Eggshell: hsl(30, 54%, 90%)
+- Light Grey: hsl(30, 18%, 87%)
+- Wenge Brown: hsl(30, 10%, 34%)
+- Dark Charcoal: hsl(24, 5%, 18%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 16px
+
+### Fonts
+
+- Family: [Young Serif](https://fonts.google.com/specimen/Young+Serif)
+- Weights: 400
+
+- Family: [Outfit](https://fonts.google.com/specimen/Outfit)
+- Weights: 400, 600, 700
+
+  .attribution { font-size: 11px; text-align: center; }
+  .attribution a { color: hsl(228, 45%, 44%); }
+  */
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Outfit, sans-serif;
+  color: hsl(30, 10%, 34%);
+  line-height: 1.4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container {
+  background-color: hsl(0, 0%, 100%);
+  min-height: 100vh;
+  max-width: 37rem;
+  margin: 1.4rem;
+}
+
+.image {
+  max-width: 100%;
+  display: block;
+}
+
+section {
+  margin: 0 1.2rem;
+}
+
+h1 {
+  font-family: "young serif";
+  font-weight: 600;
+  font-size: 2rem;
+
+  color: hsl(24, 5%, 18%);
+  margin-top: 1rem;
+}
+
+.prep-title {
+  font-family: outfit;
+  color: hsl(332, 51%, 32%);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+p {
+  margin-top: 0.6rem;
+  line-height: 1.4;
+  font-size: 0.8rem;
+}
+
+.prep-time {
+  font-family: outfit;
+  font-size: 0.9rem;
+  padding: 1rem;
+  margin: 1.4rem;
+  line-height: 1.2;
+  border-radius: 9px;
+  background-color: rgb(255, 245, 250);
+}
+
+h3 {
+  font-family: "young serif";
+  font-size: 1.6rem;
+  margin-top: 1.4rem;
+  margin-bottom: 1.2rem;
+  color: hsl(14, 45%, 36%);
+}
+.ingredients,
+.instructions,
+.type,
+.amount {
+  font-size: 0.9rem;
+  border-bottom: 1px solid hsla(32, 10%, 34%, 0.17);
+  padding: 1rem;
+}
+
+ul,
+ol {
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+
+ol li::marker {
+  color: hsl(332, 51%, 32%);
+  font-weight: 600;
+}
+
+ul li::marker {
+  color: hsl(332, 51%, 32%);
+  font-size: small;
+}
+
+li {
+  padding-left: 0.6rem;
+  margin-bottom: 0.6rem;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  list-style-type: none;
+}
+
+.amount {
+  color: hsl(332, 51%, 32%);
+  font-weight: 600;
+}
+
+.attribution {
+  font-size: 0.8rem;
+}
+
+/*  for laptop/ desktop screens */
+
+@media screen and (min-width: 37rem) {
+  body {
+    background-color: hsl(30, 54%, 90%);
+  }
+
+  .container {
+    min-height: auto;
+    min-width: 37rem;
+    padding: 2rem;
+    margin: 1rem 0rem;
+    border-radius: 1.2rem;
+    background-color: hsl(0, 0%, 100%);
+  }
+
+  h1 {
+    font-size: 2.2rem;
+    text-justify: auto;
+    margin-top: 1.6rem;
+  }
+  .image {
+    border-radius: 9px;
+  }
+
+  section {
+    margin: 0;
+  }
+
+  .prep-time {
+    line-height: 1.2;
+  }
+
+  li {
+  }
+
+  .attribution {
+    font-size: 1rem;
+    margin-top: 2rem;
+  }
+}
