@@ -10,8 +10,8 @@ I probably should have started with some of the other newbie challenges first, t
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: https://github.com/DoDoingDone/recipe-page-challenge
+- Live Site URL: https://dodoingdone.github.io/recipe-page-challenge
 
 ### Built with
 
